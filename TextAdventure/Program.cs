@@ -8,8 +8,9 @@ namespace TextAdventure
         {
             string resp1;
             Program prog = new Program();
-            Console.WriteLine("You discover a book.");
-            Console.WriteLine("Will send you backward in time, or pause time, or forward in time.");
+            Console.WriteLine("While spelunking in an ancient cavern you find the ruins of an ancient library.\nOne book in the center of the library glows and seems to beckon you to pick it up");
+            Console.WriteLine("You give into temptation and open the book. After reciting the incantation inside you are given three options.");
+            Console.WriteLine("The book will either:\nSend you backward in time\nPause time\nSend you forward in time");
             Console.WriteLine("What will you do?");
             resp1 = Console.ReadLine();
 
@@ -82,7 +83,24 @@ namespace TextAdventure
 
         public void Backward()
         {
-            Console.WriteLine("You go backward in time.\nYou die.");
+            string resp4;
+            Console.WriteLine("You go backward in time.\nYou land in the middle of Roman during the Renaissance.\nYou meet Leonardo da Vinci.\nHe asks you what he should have for lunch that day.");
+            Console.WriteLine("Do you tell him to:\nEat a sandwhich\nEat spaghetti\nEat all the mushrooms a mysterious traveler game him.");
+            resp4 = Console.ReadLine();
+            if (resp4 == "sandwhich")
+            {
+                Console.WriteLine("Da Vinci eats a turkey sandwhich made by a beautiful butcher shop woman.\nIn order to thank her he paints a picture of her that day.\nHe calls the painting the Mona Lisa.");
+            }
+            else if (resp4 == "spaghetti")
+            {
+                Console.WriteLine("Da Vinci eats a hot plate of spaghetti.\nHe offers you a fork and some for yourself.\nYou eat spaghet with the best.\nYou both come to the end of one noodle lady and the tramp style and you almost make out with da Vinci.");
+                Console.WriteLine("What is wrong with you? Do you not know how old he is? Shame on you for trying to kiss a historical icon.");
+            }
+            else if (resp4 == "mushrooms")
+            {
+                Console.WriteLine("Oh no!\nThe mushrooms were hallucinogenic!\nDa Vinci runs around Rome naked throwing paint on people.\nYou worry for his reputation and safety and ask a guard to help you catch him.");
+                Console.WriteLine("The guard replies with 'Why catch him? He does this every Tuesday.'\nYou and the guard sit back and watch Da Vinci wreck havoc in a marketplace and eventually be knocked out by the leather merchant.");
+            }
             Ending();
         }
 

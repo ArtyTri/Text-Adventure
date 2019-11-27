@@ -106,7 +106,9 @@ namespace TextAdventure
 
         public void Ending()
         {
-            Console.WriteLine("The game is over.");
+            Console.WriteLine("You are transported back to the present and time begins to move normally again.\nYou end your spelunking trip and return home.");
+            Console.WriteLine("You are happy to return to normalcy and routine.\nYou begin to really appreciate life more and realize there truly is no time like the present moment.");
+            Console.WriteLine("GAME OVER");
         }
     }
 }
